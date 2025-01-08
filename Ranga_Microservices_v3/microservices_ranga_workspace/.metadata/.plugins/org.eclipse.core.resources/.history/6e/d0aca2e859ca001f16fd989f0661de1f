@@ -1,0 +1,5 @@
+package com.in28minutes.microservices.currency_conversion_service.bean;
+
+public class CurrencyConversion {
+
+}

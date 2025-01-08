@@ -1,0 +1,16 @@
+package com.in28minutes.microservices.currency_conversion_service.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CurrencyConversionController
+{
+//	http://localhost:8100/currency-conversion/from/USD/to/INR/quantity/10
+
+	public CurrencyConversion calculateCurrencyConversion() 
+	{
+		
+		
+	}
+
+}

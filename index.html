@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Resume</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 36px;
+        color: #333;
+    }
+    .profile-pic {
+        display: block;
+        margin: 20px auto;
+        border-radius: 50%;
+        transition: transform 0.3s ease-in-out;
+        
+    }
+    .profile-pic:hover {
+        transform: scale(1.1);
+    }
+    .info {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .skills {
+        margin-top: 20px;
+    }
+    .skill-list {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+    }
+    .skill-list li {
+        display: inline-block;
+        margin: 5px;
+        padding: 8px 12px;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .skill-list li:hover {
+        transform: translateY(-5px);
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>My Resume</h1>
+    <img src="https://img.mensxp.com/media/content/2022/Apr/Ranveer-Singh-Trolled-For-His-Jordaar-Outfit1100_626676f3074d7.jpeg" alt="Profile Picture" class="profile-pic" width="150" height="100">
+    <div class="info">
+        <p><strong>Name:</strong> Sandeep Borkar</p>
+        <p><strong>Designation:</strong> Software Engineer</p>
+        <p><strong>Organization:</strong> Infosys BPM</p>
+        <p><strong>Working Experience:</strong> 3.7 years</p>
+    </div>
+    <div class="skills">
+        <h2>Core Skills:</h2>
+        <ul class="skill-list">
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>Spring Data JPA</li>
+            <li>Angular</li>
+            <li>Microservices</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
+

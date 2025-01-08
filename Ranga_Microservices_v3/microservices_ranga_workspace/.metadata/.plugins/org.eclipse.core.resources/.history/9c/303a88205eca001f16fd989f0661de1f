@@ -1,0 +1,15 @@
+package com.in28minutes.microservices.currency_conversion_service;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+import com.in28minutes.microservices.currency_conversion_service.bean.CurrencyConversion;
+
+@FeignClient(name= "currency-exchange", url="localhost:8001")
+public class CurrencyExchangeProxy 
+{
+	public CurrencyConversion retrieveExchangeValue() 
+	{
+		
+	}
+
+}

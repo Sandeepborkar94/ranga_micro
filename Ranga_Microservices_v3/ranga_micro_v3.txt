@@ -1,0 +1,44 @@
+http://localhost:8888/limits-service/default
+
+http://localhost:8888/limits-service/qa
+
+limit-micro
+
+http://localhost:8000/currency-exchange/from/USD/to/INR
+
+things we can get from application properties using below annotations:
+
+steps: 
+
+create a class -> annotate with 
+@Component -> this will marks as bean
+@ConfigurationProperties("limits-service") -> this will get the data from the properties file 
+
+create object of custome class in rest class and we can get the values 
+
+________________________________________________________________________
+
+using Spring Cloud Config Server we can get this properties/configuration from git or remote repositories
+
+@EnableConfigServer -> Connect Spring Cloud Config Server to Local Git Repository 
+
+add below in application.properties
+
+#spring.cloud.config.server.git.uri=file:///C:/Users/home/Desktop/yourProject/git-repo
+
+_________________________________________________________________________________________
+
+
+Using Feign REST Client for Service Invocation
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
+		
+ adding above dependency
+ 
+ 
+ make one interface CurrencyExchangeProxy and annotate with @FeignClient(name="currency-exchange", url="localhost:8000")
+ 
+ 

@@ -1,0 +1,5 @@
+package com.in28minutes.microservices.currency_exchange_service.repository;
+
+public interface CurrencyExchangeRepository {
+
+}
